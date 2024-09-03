@@ -63,6 +63,11 @@ cd ../
 pip install 'pillow<7'
 ```
 
+- Install albumentations to keep opencv version
+```commandline
+pip install albumentations --no-deps
+```
+
 - Monitoring software for Jetson Nano
 ```
 cd ~
@@ -70,17 +75,17 @@ sudo -H pip3 install -U jetson-stats
 sudo reboot
 jtop
 ```
-  <Insert image jtop>
+![alt text](jtop_image.png)
 
 ## III. Steps to run Code
 
 - Clone the repository
 ```
-git clone https://github.com/
+git clone https://github.com/quanvovan/object-tracking-yolov9-deepSort.git
 ```
 - Goto the cloned folder.
 ```
-cd Object-Tracking
+cd object-tracking-yolov9-deepSort
 ```
 - Install requirements with mentioned command below.
 ```
@@ -113,5 +118,5 @@ python detect_dual_tracking.py --weights 'yolov9-c.pt' --source 'your video.mp4'
 
 - Output file will be created in the ```working-dir/runs/detect/obj-tracking``` with original filename
 
-### IV. Watch the Complete Step by Step Explanation
-
+### IV. Results
+![alt text](Picture1.gif)
